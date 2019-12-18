@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Screenshots</title>
+    <title>SPA</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -27,7 +27,7 @@
 
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">News</a>
+                <a class="nav-link" href="#news" data-target="news">News</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -36,9 +36,9 @@
                     <span class="caret"></span>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="dropdown_target">
-                    <a class="dropdown-item" href="videos.html">Videos</a>
+                    <a class="dropdown-item" data-target="videos" href="#videos">Videos</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="screenshots.html">Screenshots</a>
+                    <a class="dropdown-item" href="#screenshots" data-target="screenshots">Screenshots</a>
                 </div>
             </li>
 
@@ -48,18 +48,18 @@
                     <span class="caret"></span>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="dropdown_target">
-                    <a class="dropdown-item" href="me.html">Me</a>
+                    <a class="dropdown-item" href="#me" data-target="me">Me</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="my_channel.html">My Channel</a>
+                    <a class="dropdown-item" href="#my_channel" data-target="my_channel">My Channel</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="my_dog.html">My Dog</a>
+                    <a class="dropdown-item" href="#my_dog" data-target="my_dog">My Dog</a>
                 </div>
             </li>
         </ul>
 
     </div>
 </nav>
-<div class="container col-12">
+<div class="container col-12" id="news">
     <div class="my_content_title">
         <h>You can see the latest news about me here.</h>
     </div>
@@ -76,9 +76,141 @@
         <div class="col-12 col-sm-12 col-md-6"><h>Blazy uploaded a new video.</h></div>
         <div class="col-12 col-sm-12 col-md-6"><h>Check it out:</h></div>
     </div>
-    <div class="col-12 my_content embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/I-zDh8ZAij0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="my_content">
+        <div class="col-3 embed-responsive embed-responsive-16by9" style="display: block; text-align: center; margin: auto;">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/I-zDh8ZAij0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
+</div>
+<div class="container col-12" id="me">
+    <div class=" col-12 position-relative my_content_title">
+        <h1 class="section-title text-center">Some info about me.</h1>
+    </div>
+    <div class="row my_content">
+        <div class="col-12 my_content" style="border-right: 0; border-left: 0">
+            <h>Hi, my name is Gundars, I am from Latvia and I like to play video games and listen to music. Right now i mainly play:</h>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <h>Rocket league</h>
+            <img src="./img/logo-rl.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <h>League of legends</h>
+            <img src="./img/logo-lol.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <h>Counter Strike Global Offencive</h>
+            <img src="./img/logo-csgo.png" alt="" class="img-fluid">
+        </div>
+    </div>
+    <div class="row my_content">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <h>Heres my phone number:</h>
+            <h style="color: red">+371 26 929 961</h>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <h>My email (I don't use it too much right):</h>
+            <h style="color: red">gundarspelle@inbox.lv</h>
+        </div>
+    </div>
+    <div class="row my_content">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <h>This is where I go to school right now (rvt):</h>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <h style="color: red">Krišjāņa Valdemāra iela 1C, Centra rajons, Rīga, LV-1010</h>
+        </div>
+        <div class="col-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8703.024185274237!2d24.1039147!3d56.9529808!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x96a8a0e931b27448!2sR%C4%ABgas%20Valsts%20Tehnikums!5e0!3m2!1slv!2slv!4v1574408396801!5m2!1slv!2slv"
+                    style="border:0; width: 100%; height: 400px" allowfullscreen=""></iframe>
+        </div>
+    </div>
+</div>
+<div class="container col-12" id="my_channel">
+    <div class="my_content_title">
+        <h>Info about my youtube channel:</h>
+    </div>
+    <div class="my_content">
+        <h>I sometimes play videogames so if I have any content on my channel then its about videogames.</h>
+    </div>
+    <div class="row my_content">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"><h style="font-size: 24px;" >Heres a link to my youtube channel:</h></div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"><a style="color: red; font-size: 24px;" href="https://www.youtube.com/channel/UCwdQwTEqCLus6Ys4nsQOMsA?view_as=subscriber">Click here</a></div>
+    </div>
+    <div class="my_content">
+        <div class="col-3" style="display: block; text-align: center; margin: auto;"><a href="./img/yt_pic.png" data-lightbox="yt"><img src="./img/yt_pic.png" class="img-fluid" alt=""></a></div>
+    </div>
+</div>
+<div class="container col-12" id="screenshots">
+
+    <div class=" col-12 position-relative my_content_title">
+        <h1 class="section-title text-center">Screenshots:</h1>
+    </div>
+
+    <div class="row rl_gallery my_content">
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <a href="./img/rl%20(1).jpg" data-lightbox="rl" data-title="Almost Champ 3 (Never got this high in ranked ever again)"><img class="img-fluid" src="./img/rl%20(1).jpg" alt="almost champ 3"></a>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <a href="./img/rl%20(2).jpg" data-lightbox="rl" data-title="Rocket pass 4 :)"><img class="img-fluid" src="./img/rl%20(2).jpg" alt="rocket pass 4"></a>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <a href="./img/rl%20(3).jpg" data-lightbox="rl" data-title="I have SOME crates"><img class="img-fluid" src="./img/rl%20(3).jpg" alt=" my crates"></a>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <a href="./img/rl%20(4).jpg" data-lightbox="rl" data-title="Guess who got the champ rank?"><img class="img-fluid" src="./img/rl%20(4).jpg" alt="got champ 1"></a>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <a href="./img/rl%20(5).jpg" data-lightbox="rl" data-title="Finally got to diamond rank :D"><img class="img-fluid" src="./img/rl%20(5).jpg" alt="got diamond rank"></a>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <a href="./img/rl%20(6).jpg" data-lightbox="rl" data-title="Ready for some haunted hallows?"><img class="img-fluid" src="./img/rl%20(6).jpg" alt="haunted hallows"></a>
+        </div>
+    </div>
+</div>
+<div class="container col-12" id="my_dog">
+    <div class="col-12 my_content_title">
+        <h>Here you can see pictures of my cute doggo!</h>
+    </div>
+    <div class="row rl_gallery my_content">
+        <a class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" href="./img/(1).jpg" data-lightbox="dog" ><img class="img-fluid" src="./img/(1).jpg" alt=""></a>
+        <a class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" href="./img/(2).jpg" data-lightbox="dog" ><img class="img-fluid" src="./img/(2).jpg" alt=""></a>
+        <a class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" href="./img/(3).jpg" data-lightbox="dog" ><img class="img-fluid" src="./img/(3).jpg" alt=""></a>
+        <a class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" href="./img/(4).jpg" data-lightbox="dog" ><img class="img-fluid" src="./img/(4).jpg" alt=""></a>
+        <a class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" href="./img/(5).jpg" data-lightbox="dog" ><img class="img-fluid" src="./img/(5).jpg" alt=""></a>
+        <a class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" href="./img/(6).jpg" data-lightbox="dog" ><img class="img-fluid" src="./img/(6).jpg" alt=""></a>
+        <a class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" href="./img/(7).jpg" data-lightbox="dog" ><img class="img-fluid" src="./img/(7).jpg" alt=""></a>
+        <a class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" href="./img/(8).jpg" data-lightbox="dog" ><img class="img-fluid" src="./img/(8).jpg" alt=""></a>
+        <a class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" href="./img/(9).jpg" data-lightbox="dog" ><img class="img-fluid" src="./img/(9).jpg" alt=""></a>
+        <a class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" href="./img/(10).jpg" data-lightbox="dog" ><img class="img-fluid" src="./img/(10).jpg" alt=""></a>
+        <a class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" href="./img/(11).jpg" data-lightbox="dog" ><img class="img-fluid" src="./img/(11).jpg" alt=""></a>
+        <a class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" href="./img/(12).jpg" data-lightbox="dog" ><img class="img-fluid" src="./img/(12).jpg" alt=""></a>
+        <a class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" href="./img/(13).jpg" data-lightbox="dog" ><img class="img-fluid" src="./img/(13).jpg" alt=""></a>
+        <a class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" href="./img/(14).jpg" data-lightbox="dog" ><img class="img-fluid" src="./img/(14).jpg" alt=""></a>
+    </div>
+</div>
+<div class="container col-12" id="videos">
+    <div class="row my_content_title">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"><h1>Right now I only have one video.</h1></div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"><h1>But heres a random video gallery:</h1></div>
+    </div>
+    <div class="row my_content">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FzjBKzfbhjU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xkeKotybEgM" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bbPjkj3RKqI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_7Rnb9NRnGU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IoPgu9MJ35Y" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5nfv_iEeC8Y" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Gl6ekgobG2k" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RfmEhjLIfug" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+
 </div>
 <footer class="jumbotron" style="margin-bottom: 0; ">Made by Gundars Pelle D2-3</footer>
 </body>
